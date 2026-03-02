@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — DugBot</title>
+  <meta name="description" content="Terms of Service for DugBot Home, a local-first Windows IT assistant.">
+  <link rel="icon" href="/DugBot.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0a0a0f;
+      --card: #12121a;
+      --border: rgba(255,255,255,0.06);
+      --accent: #22d3ee;
+      --accent-glow: rgba(34,211,238,0.35);
+      --purple: #a855f7;
+      --text: #e4e4e7;
+      --text-muted: #a1a1aa;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo { font-weight: 800; font-size: 1.25rem; color: #fff; }
+    .logo span { color: var(--accent); }
+    .logo a { color: inherit; }
+    .logo a:hover { text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--text-muted); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: #fff; text-decoration: none; }
+
+    /* ─── LEGAL CONTENT ─── */
+    .legal {
+      padding: 120px 0 80px;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    .legal h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .legal .effective {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+    .legal h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 36px 0 12px;
+      color: #fff;
+    }
+    .legal p, .legal li {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .legal ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    .legal li { margin-bottom: 6px; }
+    .legal strong { color: var(--text); }
+    .legal .highlight {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+    }
+    footer p { font-size: 0.85rem; color: var(--text-muted); }
+    footer .footer-brand { font-weight: 700; color: var(--text); }
+    .footer-links { margin-top: 10px; }
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin: 0 12px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .legal { padding: 100px 24px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="/">Dug<span>Bot</span></a></div>
+      <ul class="nav-links">
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#privacy">Privacy</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TERMS CONTENT -->
+  <section class="legal container">
+    <h1>Terms of Service</h1>
+    <p class="effective">Effective date: [DATE — to be set before launch]</p>
+
+    <p>These Terms of Service ("Terms") govern your use of DugBot Home ("DugBot," "the Software"), operated by [COMPANY / LEGAL ENTITY NAME] ("we," "us," "our"). By downloading, installing, or using DugBot, you agree to these Terms. If you do not agree, do not use the Software.</p>
+
+    <h2>1. What DugBot Does</h2>
+    <p>DugBot Home is a local Windows IT assistant that runs standard diagnostic and repair commands on your computer. These include common operations like DNS cache flushing, print spooler restarting, browser cache clearing, startup program management, and similar tasks — the same commands an IT professional would run manually.</p>
+    <p>DugBot runs entirely on your machine. It does not connect to the internet, access remote servers, or transmit any data externally.</p>
+
+    <h2>2. "As-Is" Disclaimer</h2>
+    <div class="highlight">
+      <p><strong>The Software is provided "as is" and "as available," without warranties of any kind, either express or implied.</strong> We disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+      <p>We do not warrant that DugBot will meet your specific requirements, operate without interruption, or be error-free.</p>
+    </div>
+
+    <h2>3. Limitation of Liability</h2>
+    <div class="highlight">
+      <p><strong>To the maximum extent permitted by applicable law, [COMPANY / LEGAL ENTITY NAME] shall not be liable for any indirect, incidental, special, consequential, or punitive damages</strong>, including but not limited to loss of data, loss of profits, system downtime, or damage to your computer, arising out of or related to your use of the Software.</p>
+      <p>Our total liability for any claim arising from use of the Software shall not exceed the purchase price you paid for DugBot.</p>
+    </div>
+
+    <h2>4. Assumption of Risk</h2>
+    <p>DugBot executes system-level commands on your Windows machine. While these are standard IT operations and DugBot logs every action it takes, <strong>you assume all risk when running the Software on your computer.</strong> We recommend reviewing DugBot's action log and maintaining regular backups of your important files.</p>
+
+    <h2>5. Privacy &amp; Data Collection</h2>
+    <p>DugBot does not collect, transmit, or store any personal data. It does not connect to the internet or any external services. Diagnostic logs are stored locally on your machine and are never sent anywhere. For full details, see our <a href="/privacy">Privacy Policy</a>.</p>
+
+    <h2>6. License</h2>
+    <p>Your purchase grants you a <strong>personal, non-exclusive, non-transferable license</strong> to use DugBot Home on your own computers. You may not redistribute, resell, sublicense, or share your copy of the Software.</p>
+    <p>Bulk or multi-seat licenses for managed service providers (MSPs) and businesses are available under a separate agreement. Contact us for details.</p>
+
+    <h2>7. Refund Policy</h2>
+    <p>DugBot is a digital product delivered electronically. Due to the nature of digital downloads, <strong>all sales are final once the product has been downloaded.</strong> If you experience a technical issue that prevents DugBot from functioning, contact us and we will work to resolve it or issue a refund at our discretion.</p>
+    <p>Payment processing is handled by <a href="https://www.lemonsqueezy.com" target="_blank" rel="noopener">Lemonsqueezy</a>. Their terms and refund policies may also apply.</p>
+
+    <h2>8. Updates to These Terms</h2>
+    <p>We reserve the right to modify these Terms at any time. Updated Terms will be posted on this page with a revised effective date. Your continued use of DugBot after changes are posted constitutes acceptance of the updated Terms.</p>
+
+    <h2>9. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the State of [STATE — to be filled in by legal counsel], without regard to its conflict of law provisions.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have questions about these Terms, contact us at:</p>
+    <p><a href="mailto:support@getdugbot.com">support@getdugbot.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p><span class="footer-brand">DugBot</span> &mdash; Your personal IT assistant.</p>
+      <div class="footer-links">
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+      <p style="margin-top: 8px;">&copy; 2026 DugBot. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -345,6 +345,14 @@
     }
     footer p { font-size: 0.85rem; color: var(--text-muted); }
     footer .footer-brand { font-weight: 700; color: var(--text); }
+    .footer-links { margin-top: 10px; }
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin: 0 12px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 768px) {
@@ -580,6 +588,10 @@
   <footer>
     <div class="container">
       <p><span class="footer-brand">DugBot</span> &mdash; Your personal IT assistant.</p>
+      <div class="footer-links">
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
       <p style="margin-top: 8px;">&copy; 2026 DugBot. All rights reserved.</p>
     </div>
   </footer>

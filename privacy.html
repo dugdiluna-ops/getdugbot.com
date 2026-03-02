@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — DugBot</title>
+  <meta name="description" content="DugBot's privacy policy. Spoiler: we collect nothing.">
+  <link rel="icon" href="/DugBot.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0a0a0f;
+      --card: #12121a;
+      --border: rgba(255,255,255,0.06);
+      --accent: #22d3ee;
+      --accent-glow: rgba(34,211,238,0.35);
+      --purple: #a855f7;
+      --text: #e4e4e7;
+      --text-muted: #a1a1aa;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo { font-weight: 800; font-size: 1.25rem; color: #fff; }
+    .logo span { color: var(--accent); }
+    .logo a { color: inherit; }
+    .logo a:hover { text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--text-muted); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: #fff; text-decoration: none; }
+
+    /* ─── LEGAL CONTENT ─── */
+    .legal {
+      padding: 120px 0 80px;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    .legal h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .legal .effective {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+    .legal h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 36px 0 12px;
+      color: #fff;
+    }
+    .legal p, .legal li {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .legal ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    .legal li { margin-bottom: 6px; }
+    .legal strong { color: var(--text); }
+    .legal .highlight {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .legal .tldr {
+      background: rgba(34,211,238,0.06);
+      border: 1px solid rgba(34,211,238,0.2);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+    .legal .tldr p { color: var(--text); margin-bottom: 0; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+    }
+    footer p { font-size: 0.85rem; color: var(--text-muted); }
+    footer .footer-brand { font-weight: 700; color: var(--text); }
+    .footer-links { margin-top: 10px; }
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin: 0 12px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .legal { padding: 100px 24px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="/">Dug<span>Bot</span></a></div>
+      <ul class="nav-links">
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#privacy">Privacy</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PRIVACY CONTENT -->
+  <section class="legal container">
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective date: [DATE — to be set before launch]</p>
+
+    <div class="tldr">
+      <p><strong>The short version:</strong> DugBot collects zero personal data. It doesn't connect to the internet. Everything stays on your PC. That's it. That's the policy.</p>
+    </div>
+
+    <p>This Privacy Policy describes how DugBot Home ("DugBot," "the Software"), operated by [COMPANY / LEGAL ENTITY NAME] ("we," "us," "our"), handles your data. We keep it short because there's genuinely not much to say.</p>
+
+    <h2>1. Data Collection</h2>
+    <p><strong>DugBot collects no personal data whatsoever.</strong></p>
+    <p>No names, no email addresses, no IP addresses, no device identifiers, no usage analytics, no telemetry, no crash reports. Nothing.</p>
+
+    <h2>2. Internet Connectivity</h2>
+    <p>DugBot does not require or use an internet connection. It does not connect to any external servers, APIs, or cloud services. All diagnostic and repair operations run entirely on your local machine.</p>
+
+    <h2>3. Local Logs</h2>
+    <p>DugBot creates diagnostic logs on your computer so you can review what actions were taken. These logs:</p>
+    <ul>
+      <li>Are stored only on your local machine</li>
+      <li>Are never transmitted, uploaded, or shared with us or anyone else</li>
+      <li>Can be viewed, copied, or deleted by you at any time</li>
+      <li>Are automatically rotated to prevent excessive disk usage</li>
+    </ul>
+
+    <h2>4. Telemetry &amp; Analytics</h2>
+    <p><strong>None.</strong> DugBot does not include any telemetry, analytics, or usage tracking of any kind. We have no idea how often you use it, what features you use, or whether it's even installed. That's by design.</p>
+
+    <h2>5. Cookies</h2>
+    <p>DugBot the software does not use cookies (it's a desktop application — there are no cookies to set). This website (getdugbot.com) may use basic analytics provided by our hosting platform (Vercel). These are standard web analytics and do not track you across other sites.</p>
+
+    <h2>6. Third-Party Data Sharing</h2>
+    <p><strong>We share no data with third parties because we have no data to share.</strong></p>
+
+    <h2>7. Payment Processing</h2>
+    <p>Purchases of DugBot are processed by <a href="https://www.lemonsqueezy.com" target="_blank" rel="noopener">Lemonsqueezy</a>. When you buy DugBot, Lemonsqueezy handles your payment information (name, email, payment method). We do not see or store your full payment details.</p>
+    <p>For information about how Lemonsqueezy handles your payment data, see the <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">Lemonsqueezy Privacy Policy</a>.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>DugBot does not knowingly collect information from anyone, including children under 13. Since we collect no data at all, this section exists purely for completeness.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>If we ever change this policy, we'll update this page with a new effective date. Given that our policy is "we collect nothing," significant changes are unlikely.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have questions about this Privacy Policy, contact us at:</p>
+    <p><a href="mailto:support@getdugbot.com">support@getdugbot.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p><span class="footer-brand">DugBot</span> &mdash; Your personal IT assistant.</p>
+      <div class="footer-links">
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+      <p style="margin-top: 8px;">&copy; 2026 DugBot. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
