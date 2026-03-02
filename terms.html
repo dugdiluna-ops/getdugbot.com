@@ -55,7 +55,8 @@
       display: flex; align-items: center; justify-content: space-between;
       height: 64px;
     }
-    .logo { font-weight: 800; font-size: 1.25rem; color: #fff; }
+    .logo { font-weight: 800; font-size: 1.25rem; color: #fff; display: flex; align-items: center; gap: 8px; }
+    .logo img { width: 28px; height: 28px; }
     .logo span { color: var(--accent); }
     .logo a { color: inherit; }
     .logo a:hover { text-decoration: none; }
@@ -137,7 +138,7 @@
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <div class="logo"><a href="/">Dug<span>Bot</span></a></div>
+      <div class="logo"><a href="/"><img src="/dugbot-logo.png" alt="DugBot icon">Dug<span>Bot</span></a></div>
       <ul class="nav-links">
         <li><a href="/#features">Features</a></li>
         <li><a href="/#privacy">Privacy</a></li>
